@@ -1,1 +1,1 @@
-# Leetcode_Daily_Challenge_Solutions
+Leetcode DSA Solutions
