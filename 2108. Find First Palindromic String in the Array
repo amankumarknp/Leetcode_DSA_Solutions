@@ -1,0 +1,29 @@
+class Solution {
+private:
+    bool CheckPalindrome(string str){
+        int n = str.size();
+        int i=0, j = n-1;
+        while(i<j){
+            if(str[i] != str[j]){
+                return false;
+            }
+            
+            i++;
+            j--;
+        }
+        return true;
+    }    
+public:
+    string firstPalindrome(vector<string>& words) {
+        int s = words.size();
+        for(int i=0;i<s;i++){
+            if(CheckPalindrome(words[i]) == true){
+                return words[i];
+            }
+            else{
+                continue;
+            }
+        }
+        return "";
+    }
+};
